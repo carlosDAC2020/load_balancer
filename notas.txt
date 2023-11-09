@@ -1,0 +1,22 @@
+pruebas de ejecucion 
+
+
+- solicitud de peticiones sin naplicacion de mm1 ni mmk ----------------------
+    balanceador
+        Peticiones recibidas: 20
+        server solicitado: http://127.0.0.1:8080
+        Tiempo que tomaron todas las peticiones: 62.411566495895386 segundos
+        Tiempo promedio de respuesta: 3.0258416652679445 segundos
+        Tiempo máximo de respuesta: 3.1334266662597656 segundos
+        Tiempo mínimo de respuesta: 3.0082452297210693 segundos
+    un server
+        Peticiones recibidas: 20
+        server solicitado: http://127.0.0.1:5001
+        Tiempo que tomaron todas las peticiones: 64.60085773468018 segundos
+        Tiempo promedio de respuesta: 3.015083932876587 segundos
+        Tiempo máximo de respuesta: 3.0772039890289307 segundos
+        Tiempo mínimo de respuesta: 3.0034055709838867 segundos
+    
+    OBSERVACIONES
+        1 el tiempo general puede variar ya que el tipo de solicitud es  enviado de forma aleatoria 
+        2 en caso de usar el proxi no tiene en cuenta si un server esta libre o no 
