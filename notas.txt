@@ -20,3 +20,5 @@ pruebas de ejecucion
     OBSERVACIONES
         1 el tiempo general puede variar ya que el tipo de solicitud es  enviado de forma aleatoria 
         2 en caso de usar el proxi no tiene en cuenta si un server esta libre o no 
+
+

@@ -4,9 +4,11 @@ import random
 
 app = Flask(__name__)
 
-
-
+# lista de servidores a redirigir
 servers=[]
+
+# informes de rendimiento actual de de cada servidor
+performance_servers=[]
 
 # Variable para llevar el control del servidor actual
 current_server_index = 0
@@ -45,6 +47,7 @@ def index(tipo_peticion=None):
     else:
         return 'Sin servidores activos'
 
+
 list_servers=set()
 @app.route('/conect/<ip>')
 def get_servers(ip):
@@ -57,6 +60,14 @@ def get_servers(ip):
         "mensaje":"ip resivida",
         "ip":ip
     }
+
+
+@app.route('/report/<report>')
+def report(report):
+    global performance_servers
+    performance_servers.append(report)
+    print(report)
+
 
     
 if __name__ == '__main__':
